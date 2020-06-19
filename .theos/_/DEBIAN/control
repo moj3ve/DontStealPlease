@@ -1,0 +1,10 @@
+Package: com.ajaidan.dontstealplease
+Name: DontStealPlease
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: A tweak to disable powering the device down when on the lock screen.
+Maintainer: Jaidan A
+Author: Jaidan A
+Section: Tweaks
+Version: 1.0
+Installed-Size: 224
