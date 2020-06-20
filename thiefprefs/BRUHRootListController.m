@@ -88,7 +88,7 @@ OBWelcomeController *welcomeController;
 	welcomeController = [[OBWelcomeController alloc] initWithTitle:@"DontStealPlease" detailText:@"A tweak to disable powering the device down when on the lock screen." icon:[UIImage imageWithContentsOfFile:@"/Library/PreferenceBundles/thiefprefs.bundle/WelcomeIcon.png"]];
 	[welcomeController addBulletedListItemWithTitle:@"Rewritten" description:@"Remade from StopAStupidThief to fullfill it's purpose elegantly." image:[UIImage systemImageNamed:@"gear"]];
 	[welcomeController addBulletedListItemWithTitle:@"Optimized" description:@"Extensively tested for battery drain." image:[UIImage systemImageNamed:@"gear"]];
-	[welcomeController.buttonTray addCaptionText:@"Made with ❤️ by Jaidan A and samoht"];
+	[welcomeController.buttonTray addCaptionText:@"Made with ❤️ by Jaidan A"];
 
 	OBBoldTrayButton* continueButton = [OBBoldTrayButton buttonWithType:1];
 	[continueButton addTarget:self action:@selector(dismissWelcomeController) forControlEvents:UIControlEventTouchUpInside];

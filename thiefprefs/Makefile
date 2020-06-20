@@ -9,7 +9,7 @@ BUNDLE_NAME = thiefprefs
 thiefprefs_FILES = BRUHRootListController.m
 thiefprefs_INSTALL_PATH = /Library/PreferenceBundles
 thiefprefs_FRAMEWORKS = UIKit
-thiefprefs_PRIVATE_FRAMEWORKS = Preferences
+thiefprefs_PRIVATE_FRAMEWORKS = Preferences OnBoardingKit
 thiefprefs_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/bundle.mk
