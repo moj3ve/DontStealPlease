@@ -23,6 +23,10 @@
 - (BOOL)isInAirplaneMode;
 @end
 
+@interface SBWiFiManager
+- (void)setWiFiEnabled:(BOOL)arg1;
+@end
+
 // Main switch
 BOOL isEnabled;
 
