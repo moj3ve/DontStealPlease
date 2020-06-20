@@ -3,23 +3,6 @@
 /*
 * MASSIVE props to Greg0109 for all of his help with this tweak.
 */
-%hook SBWifiManager
-- (void)setWiFiEnabled:(BOOL)arg1 {
-	switch (arg1) {
-		case 'TRUE' :
-			if (!locked) {
-			} else {
-				return %orig;
-			}
-		case 'FALSE' :
-			if (!locked) {
-			} else {
-				return %orig;
-			}
-		}
-	}
-}
-%end
 
 BOOL isItLocked() {
 	BOOL locked;

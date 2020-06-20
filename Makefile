@@ -1,16 +1,14 @@
 ARCHS = arm64 arm64e
 
-export SDKVERSION = 13.5
+SDKVERSION = 13.5
 
-0INSTALL_TARGET_PROCESSES = SpringBoard
+INSTALL_TARGET_PROCESSES = test
 
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = DontStealPlease
 
-StopAStupidThief_FILES = DontStealPlease.xm
-StopAStupidThief_CFLAGS = -fobjc-arc
+DontStealPlease_FILES = Tweak.xm
+DontStealPlease_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/tweak.mk
-SUBPROJECTS += thiefprefs
-include $(THEOS_MAKE_PATH)/aggregate.mk
