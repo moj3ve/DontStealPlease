@@ -2,7 +2,7 @@ ARCHS = arm64 arm64e
 
 SDKVERSION = 13.5
 
-include /opt/theos/makefiles/common.mk
+include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = thiefprefs
 
